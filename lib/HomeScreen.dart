@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class BottomSheetDemo extends StatefulWidget {
   const BottomSheetDemo({Key? key}) : super(key: key);
 
