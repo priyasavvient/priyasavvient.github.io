@@ -33,7 +33,7 @@ class Routes {
   static const home = "/";
 
   static final _builders = {
-    home: (context) => const BottomSheetDemo(),
+    home: (context) => const HomeScreen(),
   };
 }
 
