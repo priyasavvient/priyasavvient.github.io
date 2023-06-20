@@ -19,13 +19,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      routes: Routes._builders,
+      initialRoute: Routes.home,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const BottomSheetDemo(),
     );
   }
+}
+
+class Routes {
+  static const home = "/";
+
+  static final _builders = {
+    home: (context) => const BottomSheetDemo(),
+  };
 }
 
 
